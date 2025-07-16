@@ -11,7 +11,7 @@ app = FastAPI()
 # Allow frontend to access backend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://sketch-frontend-1yxjixml2-yashmanics-projects.vercel.app/"],  # React dev server
+    allow_origins=["*"],  # Allow all origins
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
